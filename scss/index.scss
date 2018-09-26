@@ -70,6 +70,9 @@ h4{
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-attachment: fixed;
   position: relative;
     .img_code{
@@ -77,6 +80,9 @@ h4{
       width: 50%;
       background-repeat: no-repeat;
       background-position: left;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
       background-size: cover;
       position: absolute;
       z-index: 0;
