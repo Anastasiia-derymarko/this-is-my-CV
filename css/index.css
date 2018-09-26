@@ -58,6 +58,9 @@ h4 {
     .row {
       width: 95%; } }
 
+.white-fon {
+  background: #fff; }
+
 .top {
   height: 100vh;
   width: 100%;
@@ -124,7 +127,6 @@ h4 {
       left: 0; }
 
 .aboutMe {
-  background: #fff;
   overflow: hidden; }
   .aboutMe .row .photo {
     margin-top: 50px;
@@ -165,7 +167,8 @@ h4 {
       color: #fff; }
       @media only screen and (max-width: 1200px) {
         .aboutMe .row .text_About_me .blockRed {
-          width: 100%; } }
+          width: 110%;
+          margin-right: -25px; } }
     .aboutMe .row .text_About_me .blockWhite {
       margin: 0;
       width: 50%;
@@ -188,121 +191,121 @@ h4 {
       font-family: "Arial", serif;
       margin-top: -50px; }
 
-.skills {
-  background: #fff; }
-  .skills .row {
-    margin-top: 40px; }
-    .skills .row .mySkillsBlock {
-      width: 50%;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      margin-right: 15px; }
-      .skills .row .mySkillsBlock .skillBlock {
-        width: 29%; }
-        .skills .row .mySkillsBlock .skillBlock .skill_circle {
+.skills .row {
+  margin-top: 40px; }
+  .skills .row .mySkillsBlock {
+    width: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-right: 15px; }
+    .skills .row .mySkillsBlock .skillBlock {
+      width: 29%; }
+      .skills .row .mySkillsBlock .skillBlock .skill_circle {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        border: 3px solid #eaeaea;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: relative;
+        line-height: 100px; }
+        .skills .row .mySkillsBlock .skillBlock .skill_circle .cl {
           width: 100px;
           height: 100px;
-          margin: 0 auto;
+          position: absolute;
+          right: -3px;
+          bottom: -3px;
+          z-index: 0; }
+        .skills .row .mySkillsBlock .skillBlock .skill_circle span {
+          z-index: 3;
+          width: 100%;
+          height: 100%;
+          vertical-align: middle;
           -webkit-border-radius: 100%;
           border-radius: 100%;
-          border: 3px solid #eaeaea;
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-          -ms-flex-align: center;
-          align-items: center;
-          -webkit-box-pack: center;
-          -webkit-justify-content: center;
-          -ms-flex-pack: center;
-          justify-content: center;
-          position: relative;
-          line-height: 100px; }
-          .skills .row .mySkillsBlock .skillBlock .skill_circle .cl {
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            right: -3px;
-            bottom: -3px;
-            z-index: 0; }
-          .skills .row .mySkillsBlock .skillBlock .skill_circle span {
-            z-index: 3;
-            width: 100%;
-            height: 100%;
-            vertical-align: middle;
-            -webkit-border-radius: 100%;
-            border-radius: 100%;
-            background: white;
-            text-align: center;
-            font-family: "Bahnschrift", sans-serif;
-            font-size: 1.5em;
-            font-weight: 600; }
-        .skills .row .mySkillsBlock .skillBlock h4 {
-          font-size: 1.5em;
+          background: white;
           text-align: center;
-          margin: 10px auto 40px; }
-    .skills .row .skills_study {
-      width: 50%; }
-      .skills .row .skills_study h2 {
-        color: #fff;
-        background: #ee7383;
+          font-family: "Bahnschrift", sans-serif;
+          font-size: 1.5em;
+          font-weight: 600; }
+      .skills .row .mySkillsBlock .skillBlock h4 {
+        font-size: 1.5em;
         text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        margin: 0; }
-      .skills .row .skills_study .study_block {
-        margin: 35px auto 0px; }
-        .skills .row .skills_study .study_block .hexagon_row1, .skills .row .skills_study .study_block .hexagon_row2 {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          margin: 0 auto;
-          width: 260px; }
-          .skills .row .skills_study .study_block .hexagon_row1 .hexagon, .skills .row .skills_study .study_block .hexagon_row2 .hexagon {
-            min-width: 122px;
-            width: 129px;
-            margin-right: 5px;
-            position: relative; }
-            .skills .row .skills_study .study_block .hexagon_row1 .hexagon img, .skills .row .skills_study .study_block .hexagon_row2 .hexagon img {
-              width: 100px;
-              height: 90px;
-              position: absolute;
-              top: 19px;
-              left: 11px; }
-            .skills .row .skills_study .study_block .hexagon_row1 .hexagon h4, .skills .row .skills_study .study_block .hexagon_row2 .hexagon h4 {
-              position: absolute;
-              top: 15px;
-              left: 25px;
-              color: #ee7383;
-              z-index: 3; }
-          .skills .row .skills_study .study_block .hexagon_row1 .hexagon_3, .skills .row .skills_study .study_block .hexagon_row2 .hexagon_3 {
-            padding-left: 67px;
-            margin-top: -23px; }
-            .skills .row .skills_study .study_block .hexagon_row1 .hexagon_3 img, .skills .row .skills_study .study_block .hexagon_row2 .hexagon_3 img {
-              left: 81px; }
-          .skills .row .skills_study .study_block .hexagon_row1 .hexagon_4, .skills .row .skills_study .study_block .hexagon_row2 .hexagon_4 {
-            padding-left: 67px;
-            margin-top: -23px; }
-            .skills .row .skills_study .study_block .hexagon_row1 .hexagon_4 img, .skills .row .skills_study .study_block .hexagon_row2 .hexagon_4 img {
-              left: 93px;
-              height: 80px;
-              width: 90px; }
+        margin: 10px auto 40px; }
+  .skills .row .skills_study {
+    width: 50%; }
+    .skills .row .skills_study h2 {
+      color: #fff;
+      background: #ee7383;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin: 0; }
+    .skills .row .skills_study .study_block {
+      margin: 35px auto 0px; }
+      .skills .row .skills_study .study_block .hexagon_row1, .skills .row .skills_study .study_block .hexagon_row2 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 auto;
+        width: 260px; }
+        .skills .row .skills_study .study_block .hexagon_row1 .hexagon, .skills .row .skills_study .study_block .hexagon_row2 .hexagon {
+          min-width: 122px;
+          width: 129px;
+          margin-right: 5px;
+          position: relative; }
+          .skills .row .skills_study .study_block .hexagon_row1 .hexagon img, .skills .row .skills_study .study_block .hexagon_row2 .hexagon img {
+            width: 100px;
+            height: 90px;
+            position: absolute;
+            top: 19px;
+            left: 11px; }
+          .skills .row .skills_study .study_block .hexagon_row1 .hexagon h4, .skills .row .skills_study .study_block .hexagon_row2 .hexagon h4 {
+            position: absolute;
+            top: 15px;
+            left: 25px;
+            color: #ee7383;
+            z-index: 3; }
+        .skills .row .skills_study .study_block .hexagon_row1 .hexagon_3, .skills .row .skills_study .study_block .hexagon_row2 .hexagon_3 {
+          padding-left: 67px;
+          margin-top: -23px; }
+          .skills .row .skills_study .study_block .hexagon_row1 .hexagon_3 img, .skills .row .skills_study .study_block .hexagon_row2 .hexagon_3 img {
+            left: 81px; }
+        .skills .row .skills_study .study_block .hexagon_row1 .hexagon_4, .skills .row .skills_study .study_block .hexagon_row2 .hexagon_4 {
+          padding-left: 67px;
+          margin-top: -23px; }
+          .skills .row .skills_study .study_block .hexagon_row1 .hexagon_4 img, .skills .row .skills_study .study_block .hexagon_row2 .hexagon_4 img {
+            left: 93px;
+            height: 80px;
+            width: 90px; }
 
 .contact_and_whyMe {
-  background: #fff;
   padding-bottom: 50px; }
+  @media only screen and (max-width: 1200px) {
+    .contact_and_whyMe .row {
+      flex-direction: column; } }
   .contact_and_whyMe .row .whyMe {
     display: -webkit-box;
     display: -webkit-flex;
@@ -327,9 +330,6 @@ h4 {
       font-weight: 600; }
     .contact_and_whyMe .row .whyMe p {
       margin-left: 25px; }
-      @media only screen and (max-width: 1200px) {
-        .contact_and_whyMe .row .whyMe p {
-          max-height: 192px; } }
   .contact_and_whyMe .row .contacts {
     width: 30%;
     -ms-grid-row-align: center;
@@ -344,9 +344,10 @@ h4 {
     .contact_and_whyMe .row .contacts h2 {
       text-transform: uppercase;
       font-weight: 700;
-      margin: 0px 0px 15px 0px;
+      margin: 15px 0px 15px 0px;
       color: #535353;
-      letter-spacing: 3px; }
+      letter-spacing: 3px;
+      text-align: left; }
     .contact_and_whyMe .row .contacts p {
       color: #ee7383;
       margin: 0px 0px 10px 0px;
