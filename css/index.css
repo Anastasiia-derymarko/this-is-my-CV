@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #535353; }
+
+/*background: [background-attachment || background-color || background-image 
+  || background-position || background-repeat] | inherit*/
+.lighter {
+  font-weight: 300; }
+
+.bold {
+  font-weight: 900; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 2em; }
+
+p {
+  font-size: 1.1em; }
+
+h4 {
+  font-size: 1.5em; }
+
+.caption {
+  display: flex; }
+  .caption h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0px 0px;
+    width: 50%;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 0px;
+    z-index: 1; }
+  .caption .right {
+    padding-left: 0px;
+    padding-right: 5px;
+    text-align: right; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (max-width: 1200px) {
+    .row {
+      width: 95%; } }
+
+.top {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+  .top .img_code {
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .top .img_code h1 {
+      z-index: 2;
+      position: relative;
+      text-transform: uppercase;
+      font-size: 2.5em;
+      margin-bottom: 0px;
+      text-align: center; }
+      .top .img_code h1 .Anastasiia {
+        color: #ee7383; }
+    .top .img_code h3 {
+      font-size: 1.5em;
+      z-index: 2;
+      position: relative;
+      margin-top: 0px;
+      text-align: right;
+      padding-right: 50px; }
+    .top .img_code .fon {
+      position: absolute;
+      background: #fff;
+      opacity: 0.6;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
+
+.aboutMe .row .photo {
+  margin-top: 50px;
+  padding-right: 2%;
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .aboutMe .row .photo img {
+    display: block;
+    width: 48%;
+    height: 48%;
+    margin-bottom: 4%; }
+
+.aboutMe .row .text_About_me {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap; }
+  .aboutMe .row .text_About_me .blockRed {
+    width: 50%;
+    background: #ee7383;
+    margin-top: -83px;
+    z-index: 0;
+    padding: 80px 24px 15px;
+    color: #fff; }
+    @media only screen and (max-width: 1200px) {
+      .aboutMe .row .text_About_me .blockRed {
+        width: 100%; } }
+  .aboutMe .row .text_About_me .blockWhite {
+    margin: 0;
+    width: 50%;
+    padding: 0px 15px 0px 24px; }
+    @media only screen and (max-width: 1200px) {
+      .aboutMe .row .text_About_me .blockWhite {
+        width: 100%; } }
+  .aboutMe .row .text_About_me .junior {
+    letter-spacing: 3px;
+    width: 206px;
+    height: 55px;
+    text-transform: uppercase;
+    margin: 70px auto;
+    padding: 0px;
+    border-bottom: 5px solid #ee7383; }
+  .aboutMe .row .text_About_me .commas {
+    color: #ee7383;
+    font-size: 2em;
+    font-weight: 900;
+    font-family: "Arial", serif;
+    margin-top: -50px; }
+
+.skills .row {
+  margin-top: 40px; }
+  .skills .row .mySkillsBlock {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 15px; }
+    .skills .row .mySkillsBlock .skillBlock {
+      width: 29%; }
+      .skills .row .mySkillsBlock .skillBlock .skill_circle {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        border-radius: 100%;
+        border: 3px solid #eaeaea;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        line-height: 100px; }
+        .skills .row .mySkillsBlock .skillBlock .skill_circle .cl {
+          width: 100px;
+          height: 100px;
+          position: absolute;
+          right: -3px;
+          bottom: -3px;
+          z-index: 0; }
+        .skills .row .mySkillsBlock .skillBlock .skill_circle span {
+          z-index: 3;
+          width: 100%;
+          height: 100%;
+          vertical-align: middle;
+          border-radius: 100%;
+          background: white;
+          text-align: center;
+          font-family: "Bahnschrift", sans-serif;
+          font-size: 1.5em;
+          font-weight: 600; }
+      .skills .row .mySkillsBlock .skillBlock h4 {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 10px auto 40px; }
+  .skills .row .skills_study {
+    width: 50%; }
+    .skills .row .skills_study h2 {
+      color: #fff;
+      background: #ee7383;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin: 0; }
+    .skills .row .skills_study .study_block {
+      margin: 35px auto 0px; }
+      .skills .row .skills_study .study_block .hexagon_row1, .skills .row .skills_study .study_block .hexagon_row2 {
+        display: flex;
+        margin: 0 auto;
+        width: 260px; }
+        .skills .row .skills_study .study_block .hexagon_row1 .hexagon, .skills .row .skills_study .study_block .hexagon_row2 .hexagon {
+          min-width: 122px;
+          width: 129px;
+          margin-right: 5px;
+          position: relative; }
+          .skills .row .skills_study .study_block .hexagon_row1 .hexagon img, .skills .row .skills_study .study_block .hexagon_row2 .hexagon img {
+            width: 100px;
+            height: 90px;
+            position: absolute;
+            top: 19px;
+            left: 11px; }
+          .skills .row .skills_study .study_block .hexagon_row1 .hexagon h4, .skills .row .skills_study .study_block .hexagon_row2 .hexagon h4 {
+            position: absolute;
+            top: 15px;
+            left: 25px;
+            color: #ee7383;
+            z-index: 3; }
+        .skills .row .skills_study .study_block .hexagon_row1 .hexagon_3, .skills .row .skills_study .study_block .hexagon_row2 .hexagon_3 {
+          padding-left: 67px;
+          margin-top: -23px; }
+          .skills .row .skills_study .study_block .hexagon_row1 .hexagon_3 img, .skills .row .skills_study .study_block .hexagon_row2 .hexagon_3 img {
+            left: 81px; }
+        .skills .row .skills_study .study_block .hexagon_row1 .hexagon_4, .skills .row .skills_study .study_block .hexagon_row2 .hexagon_4 {
+          padding-left: 67px;
+          margin-top: -23px; }
+          .skills .row .skills_study .study_block .hexagon_row1 .hexagon_4 img, .skills .row .skills_study .study_block .hexagon_row2 .hexagon_4 img {
+            left: 93px;
+            height: 80px;
+            width: 90px; }
+
+.contact_and_whyMe {
+  margin-bottom: 50px; }
+  @media only screen and (max-width: 1200px) {
+    .contact_and_whyMe .row {
+      flex-direction: column; } }
+  .contact_and_whyMe .row .whyMe {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (max-width: 1200px) {
+      .contact_and_whyMe .row .whyMe {
+        width: 100%; } }
+    .contact_and_whyMe .row .whyMe h2 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #ee7383;
+      font-weight: 600; }
+    .contact_and_whyMe .row .whyMe p {
+      max-height: 192px;
+      margin-left: 25px;
+      /*     @media only screen and (max-width: 1200px)  {
+          font-size: 0.5em;
+
+      }*/ }
+  .contact_and_whyMe .row .contacts {
+    width: 30%;
+    align-self: center;
+    margin-left: 60px; }
+    @media only screen and (max-width: 1200px) {
+      .contact_and_whyMe .row .contacts {
+        width: 100%;
+        text-align: center; } }
+    .contact_and_whyMe .row .contacts h2 {
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0px 0px 15px 0px;
+      color: #535353;
+      letter-spacing: 3px; }
+    .contact_and_whyMe .row .contacts p {
+      color: #ee7383;
+      margin: 0px 0px 10px 0px;
+      display: flex;
+      align-items: center; }
+      .contact_and_whyMe .row .contacts p img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px; }
